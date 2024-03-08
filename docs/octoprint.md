@@ -17,9 +17,6 @@ OctoPrint offre une visualisation en direct du processus d'impression, avec la p
 #### Gestion des fichiers
 Les utilisateurs peuvent télécharger, gérer et organiser leurs fichiers d'impression directement à partir de l'interface OctoPrint.
 
-#### Contrôle du flux
-OctoPrint permet de réguler le flux d'impression en ajustant les paramètres tels que la température de la buse et du lit chauffant, la vitesse d'extrusion, etc.
-
 #### Plugin et personnalisation
 OctoPrint est extensible grâce à un système de plugins. Les utilisateurs peuvent ajouter des fonctionnalités supplémentaires en installant des plugins pour répondre à leurs besoins spécifiques.
 
