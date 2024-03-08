@@ -64,9 +64,9 @@
     </li>
         </ul>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#configuration-des-parametres">Configuration des parametres</a>
+    <li class="toctree-l2"><a class="reference internal" href="#configuration-des-parametres">Configuration des paramètres</a>
         <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#le-controle-dacces">Le controle d'acces</a>
+    <li class="toctree-l3"><a class="reference internal" href="#le-controle-dacces">Le controle d'accès</a>
     </li>
     <li class="toctree-l3"><a class="reference internal" href="#suivi-anonyme-de-lutilisation">Suivi anonyme de l’utilisation</a>
     </li>
@@ -78,7 +78,7 @@
     </li>
     <li class="toctree-l3"><a class="reference internal" href="#commandes-du-serveur">Commandes du serveur</a>
     </li>
-    <li class="toctree-l3"><a class="reference internal" href="#enregistrements-par-webcam-et-en-accelere">Enregistrements par webcam et en accelere</a>
+    <li class="toctree-l3"><a class="reference internal" href="#enregistrements-par-webcam-et-en-accelere">Enregistrements par webcam et en accéléré</a>
     </li>
         </ul>
     </li>
@@ -148,35 +148,35 @@
               
                 <h1 id="connexion-de-octoprint-a-limprimante-3d">Connexion de Octoprint a l’imprimante 3D</h1>
 <h2 id="branchement">Branchement</h2>
-<p>Votre Raspberry Pi eteinte, connectez votre micro processeur à l’imprimante 3D avec le bon câble USB. Une fois cela fait, allumez l’imprimante 3D, connectez le Pi à une source d’énergie et allumez-le.</p>
-<p>Vous pouvez vous murir d'un ecran a brancher via HDMI avec le Pi pour suivre l'application de toutes les configurations faites. Pour une premiere fois, cela peut prendre un peu de temps mais apres ce sera beaucoup plus rapide. Vous savez que l'operation est terminee lorsque vous voyez une invitation a la connection.</p>
+<p>Votre Raspberry Pi éteinte, connectez votre micro processeur à l’imprimante 3D avec le bon câble USB. Une fois cela fait, allumez l’imprimante 3D, connectez le Pi à une source d’énergie et allumez-le.</p>
+<p>Vous pouvez vous murir d'un écran à brancher via HDMI avec le Pi pour suivre l'application de toutes les configurations faites. Pour une première fois, cela peut prendre un peu de temps mais après ce sera beaucoup plus rapide. Vous savez que l'opération est terminée lorsque vous voyez un prompt qui vous invite à vous connecter.</p>
 <h2 id="acces-a-octoprint">Acces a Octoprint</h2>
-<p>Apres un demarrage reussi, connectez via n'importe quel navigateur mais sur le reseau qui a ete configure avec OctoPi. 
-Pour acceder a l'interface web d'Octoprint, vous pouvez utiliser une de ces 2 URLs:</p>
+<p>Après un démarrage réussi, connectez vous via n'importe quel navigateur mais sur le réseau qui a été configuré avec OctoPi. 
+Pour accéder a l'interface web d'Octoprint, vous pouvez utiliser une de ces 2 URLs:</p>
 <h6 id="httpnomlocal-avec-nom-le-nom-dhote-que-vous-auriez-mis-lors-de-linstallation-de-limage-de-octopi">http://[nom].local/ avec nom, le nom d'hote que vous auriez mis lors de l'installation de l'image de OctoPi</h6>
 <h6 id="httpip-avec-ip-ladresse-ip-de-la-raspberry">http://[ip] avec ip, l'adresse ip de la raspberry</h6>
-<h2 id="configuration-des-parametres">Configuration des parametres</h2>
+<h2 id="configuration-des-parametres">Configuration des paramètres</h2>
 <p>Les principaux parametres incluent:</p>
-<h6 id="le-controle-dacces">Le controle d'acces</h6>
-<p>Vous devez y renseigner le nom d'utilisateur et le mot de passe necessaires pour se connecter a l'interface web d'Octoprint. </p>
+<h6 id="le-controle-dacces">Le controle d'accès</h6>
+<p>Vous devez y renseigner le nom d'utilisateur et le mot de passe nécessaires pour se connecter à l'interface web d'Octoprint. </p>
 <h6 id="suivi-anonyme-de-lutilisation">Suivi anonyme de l’utilisation</h6>
 <p>Vous decidez si vous souhaitez qu'OctoPrint collecte de maniere anonyme ou non des donnees de votre part.</p>
 <h6 id="verification-de-la-connectivite-en-ligne">Verification de la connectivite en ligne</h6>
 <h6 id="liste-noire-de-plugins">Liste noire de plugins</h6>
-<p>Vous pouvez selectionner certains plugins que vous mettrez dans votre liste noire.</p>
+<p>Vous pouvez sélectionner certains plugins que vous mettrez dans votre liste noire.</p>
 <h6 id="configuration-du-profil-de-limprimante">Configuration du profil de l'imprimante</h6>
-<p>Vous devez mettre un nom pour votre imprimante et renseigner les valeurs correspondantes a votre imprimante.</p>
+<p>Vous devez mettre un nom pour votre imprimante et renseigner les valeurs correspondantes à votre imprimante.</p>
 <h6 id="commandes-du-serveur">Commandes du serveur</h6>
 <p>Vous pouvez configurer les commandes du serveur qu’OctoPrint prendra en charge. </p>
-<h6 id="enregistrements-par-webcam-et-en-accelere">Enregistrements par webcam et en accelere</h6>
-<p>Vous pouvez configurer les parametres de votre webcam et mettre en place des enregistrements en accelere.
+<h6 id="enregistrements-par-webcam-et-en-accelere">Enregistrements par webcam et en accéléré</h6>
+<p>Vous pouvez configurer les paramètres de votre webcam et mettre en place des enregistrements en accéléré.
 Des lors, des que vous cliquez sur "Next" ou "Suivant", vous tomberez sur la page d'Octoprint en elle meme.</p>
 <h2 id="connexion">Connexion</h2>
-<p>Au niveau des parametres en haut a gauche, cochez les cases "Save connection settings" et "Auto-connect on server startup".
-Laissez Serial Port et Baudrate définis sur AUTO.
-Cliquez ensuite sur Connect et c'est bon.</p>
-<p>Vous n'aurez a faire cette etape qu'une fois.
-Toutes les autres fois, votre imprimante sera connectee a moins que vous vous soyez deconnecter.</p>
+<p>Au niveau des paramètres en haut à gauche, cochez les cases "Save connection settings" et "Auto-connect on server startup".
+Laissez "Serial Port" et "Baudrate" définis sur AUTO.
+Cliquez ensuite sur "Connect" et c'est bon.</p>
+<p>Vous n'aurez à faire cette étape qu'une fois.
+Toutes les autres fois, votre imprimante sera connectée à moins que vous vous soyez déconnecter.</p>
               
             </div>
           </div><footer>
