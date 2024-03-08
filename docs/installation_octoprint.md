@@ -13,12 +13,11 @@ Le téléchargement de Rasperry Pi Imager se fait via le site officiel : https:/
 ### Installation de l’image officielle OctoPi sur une micro carte SD
 
 Une fois Raspberry Pi Imager installé, il faut :
-### Lancer l'application
-### Trouver l'image de OctoPi
-### Configurer les options liées au wifi
-### Configurer les informations du systeme (parametres de localisation, nom d'hote)
-### Installer l'image de OctoPi sur une micro carte SD
-### Inserer la carte dans la Raspberry Pi
+1. Lancer l'application
+2. Trouver l'image de OctoPi
+3. Configurer les options liées au wifi
+4. Installer l'image de OctoPi sur une micro carte SD
+5. Inserer la carte dans la Raspberry Pi
 
 Les details de ces differentes etapes se trouvent sur le site officiel d'Octoprint: https://octoprint.org/download/
 
