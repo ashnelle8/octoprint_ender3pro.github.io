@@ -1,0 +1,17 @@
+site_name: Octoprint For Ender3pro
+site_url: https://example.com/
+nav:
+  - Home: index.md
+  - Octoprint: octoprint.md
+  - Installation de Octoprint sur la Raspberry via la microcarte SD: installation_octoprint.md
+  - Connexion de Octoprint a l’imprimante 3D : connexion_octoprint.md
+  - Lancement de la première impression via Octoprint : premiere_impression.md
+  - Mécanisme d’envoi de notifications: notifications.md
+  - Mécanisme de mise en place de liste d’attente : liste_attente.md
+  - Mécanisme de mise en place d’un Dashboard : dashboard.md
+  - Réalisation du circuit intégrant la Raspberry a l’imprimante 3D : circuit.md
+  - Mécanisme d’arrêt de l’imprimante à distance : arret_imprimante.md
+  - Installation d’un web cam, configuration et gestion des time lapses : webcam.md
+  - Mécanisme de lancement automatique de l’imprimante après une coupure de courant : lancement.md
+  - Mécanisme de mise en place de micro-production : microproduction.md
+theme: readthedocs
