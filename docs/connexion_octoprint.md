@@ -49,10 +49,14 @@ Toutes les autres fois, votre imprimante sera connectée à moins que vous vous 
 Par ailleurs, vous devez faire très attention aux warnings qui apparaitront sur la page de connexion.
 
 ### NB
+
+![Undervoltage Problem](assets/undervoltage.png)
+
 Si vous avez une erreur du type "Undervoltage detected", il s'agit du fait que votre raspberry recoit une tension inférieur à celle dont elle a besoin et cela peut affecter la qualité de vos impressions. De ce fait, je vous recommande de, soit changer le chargeur de votre raspberry (car inadéquat), soit relier l'alimentation de votre raspberry pi à celle de votre imprimante tout en vous assurant dans les 2 cas qu'une tension d'au moins 5V est delivrée a la raspberry. PHOTO
 
 
 ![Firmware Problem](assets/firmware_problem.webp)
+
 Si vous avez une erreur du type "Firmware Broken" (PHOTO), cela indique un problème au niveau du protocole de communication entre ton imprimante 3D et Octoprint. Néanmoins, cela peut etre réglé avec l'installation du plugin "NOM"
 Pour l'istallation du plugin, ....
 
