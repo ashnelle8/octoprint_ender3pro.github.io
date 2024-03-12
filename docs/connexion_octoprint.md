@@ -14,7 +14,7 @@ Après un démarrage réussi, connectez vous via n'importe quel navigateur mais 
 Pour accéder a l'interface web d'Octoprint, vous pouvez utiliser une de ces 2 URLs:
 
 **http://[nom].local/** avec nom, le nom d'hote que vous auriez mis lors de l'installation de l'image de OctoPi
-**http://[ip] avec ip**, l'adresse ip de la raspberry
+**http://[ip]** avec ip, l'adresse ip de la raspberry
 
 ## Configuration des paramètres
 
