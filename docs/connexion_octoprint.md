@@ -56,13 +56,27 @@ Par ailleurs, vous devez faire très attention aux warnings qui apparaitront sur
 
 ![Undervoltage Problem](assets/undervoltage.png)
 
-Si vous avez une erreur du type "Undervoltage detected", il s'agit du fait que votre raspberry recoit une tension inférieur à celle dont elle a besoin et cela peut affecter la qualité de vos impressions. De ce fait, je vous recommande de, soit changer le chargeur de votre raspberry (car inadéquat), soit relier l'alimentation de votre raspberry pi à celle de votre imprimante tout en vous assurant dans les 2 cas qu'une tension d'au moins 5V est delivrée a la raspberry.
+Si vous avez une erreur du type **Undervoltage detected**, il s'agit du fait que votre raspberry recoit une tension inférieur à celle dont elle a besoin et cela peut affecter la qualité de vos impressions. De ce fait, je vous recommande de, soit changer le chargeur de votre raspberry (car inadéquat), soit relier l'alimentation de votre raspberry pi à celle de votre imprimante tout en vous assurant dans les 2 cas qu'une tension d'au moins **5V** est delivrée a la raspberry.
 
 
 #### Firmware Problem
 
 ![Firmware Problem](assets/firmware_problem.webp)
 
-Si vous avez une erreur du type "Firmware Broken", cela indique un problème au niveau du protocole de communication entre ton imprimante 3D et Octoprint. Néanmoins, cela peut etre réglé avec l'installation du plugin "NOM"
-Pour l'installation du plugin, (PRINCIPE A AJOUTER)
+Si vous avez une erreur du type **Firmware Broken**, cela indique un problème au niveau du protocole de communication entre ton imprimante 3D et Octoprint. Néanmoins, cela peut etre réglé avec l'installation du plugin **Creality-2x-temperature-reporting-fix**
+Pour l'installation du plugin : 
+
+Allez dans les paramètres en cliquant sur l'icone en forme de clé
+
+![parametres](assets/parametres.png)
+
+Cliquez sur **Plugin Manager** sous OCTOPRINT puis sur **Get more**
+
+![manager](assets/manager.png)
+
+Entrez **Creality-2x-temperature-reporting-fix** au niveau de la barre de recherche puis sur **Install**
+
+![installation](assets/installation.png)
+
+Suivez ensuite les instructions pour redémarrer Octoprint
 

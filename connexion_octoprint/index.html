@@ -192,11 +192,18 @@ Par ailleurs, vous devez faire très attention aux warnings qui apparaitront sur
 <h3 id="nb">NB</h3>
 <h4 id="undervoltage-problem">Undervoltage Problem</h4>
 <p><img alt="Undervoltage Problem" src="../assets/undervoltage.png" /></p>
-<p>Si vous avez une erreur du type "Undervoltage detected", il s'agit du fait que votre raspberry recoit une tension inférieur à celle dont elle a besoin et cela peut affecter la qualité de vos impressions. De ce fait, je vous recommande de, soit changer le chargeur de votre raspberry (car inadéquat), soit relier l'alimentation de votre raspberry pi à celle de votre imprimante tout en vous assurant dans les 2 cas qu'une tension d'au moins 5V est delivrée a la raspberry.</p>
+<p>Si vous avez une erreur du type <strong>Undervoltage detected</strong>, il s'agit du fait que votre raspberry recoit une tension inférieur à celle dont elle a besoin et cela peut affecter la qualité de vos impressions. De ce fait, je vous recommande de, soit changer le chargeur de votre raspberry (car inadéquat), soit relier l'alimentation de votre raspberry pi à celle de votre imprimante tout en vous assurant dans les 2 cas qu'une tension d'au moins <strong>5V</strong> est delivrée a la raspberry.</p>
 <h4 id="firmware-problem">Firmware Problem</h4>
 <p><img alt="Firmware Problem" src="../assets/firmware_problem.webp" /></p>
-<p>Si vous avez une erreur du type "Firmware Broken", cela indique un problème au niveau du protocole de communication entre ton imprimante 3D et Octoprint. Néanmoins, cela peut etre réglé avec l'installation du plugin "NOM"
-Pour l'installation du plugin, (PRINCIPE A AJOUTER)</p>
+<p>Si vous avez une erreur du type <strong>Firmware Broken</strong>, cela indique un problème au niveau du protocole de communication entre ton imprimante 3D et Octoprint. Néanmoins, cela peut etre réglé avec l'installation du plugin <strong>Creality-2x-temperature-reporting-fix</strong>
+Pour l'installation du plugin : </p>
+<p>Allez dans les paramètres en cliquant sur l'icone en forme de clé</p>
+<p><img alt="parametres" src="../assets/parametres.png" /></p>
+<p>Cliquez sur <strong>Plugin Manager</strong> sous OCTOPRINT puis sur <strong>Get more</strong></p>
+<p><img alt="manager" src="../assets/manager.png" /></p>
+<p>Entrez <strong>Creality-2x-temperature-reporting-fix</strong> au niveau de la barre de recherche puis sur <strong>Install</strong></p>
+<p><img alt="installation" src="../assets/installation.png" /></p>
+<p>Suivez ensuite les instructions pour redémarrer Octoprint</p>
               
             </div>
           </div><footer>

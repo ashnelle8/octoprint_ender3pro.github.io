@@ -21,7 +21,7 @@ Une fois Raspberry Pi Imager installé, il faut :
 ###### 4. Installer l'image de OctoPi sur une micro carte SD
 Ayez à votre disposition une micro carte SD vide car lors de l'installation, tout ce qui pourrait se trouver dessus sera supprimer.
 Evitez également de retirer la carte lors de l'installation.
-###### 5. Inserer la carte dans la Raspberry Pi
+###### 5. Insérer la carte dans la Raspberry Pi
 
 Les détails de ces différentes étapes se trouvent sur le site officiel d'Octoprint: [Etapes d'installation d'Octoprint sur la micro carte SD](https://octoprint.org/download/)
 
