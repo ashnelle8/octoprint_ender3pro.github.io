@@ -85,6 +85,12 @@
     <li class="toctree-l2"><a class="reference internal" href="#connexion">Connexion</a>
         <ul>
     <li class="toctree-l3"><a class="reference internal" href="#nb">NB</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#undervoltage-problem">Undervoltage Problem</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#firmware-problem">Firmware Problem</a>
+    </li>
+        </ul>
     </li>
         </ul>
     </li>
@@ -160,6 +166,7 @@ Pour accéder a l'interface web d'Octoprint, vous pouvez utiliser une de ces 2 U
 <h6 id="httpnomlocal-avec-nom-le-nom-dhote-que-vous-auriez-mis-lors-de-linstallation-de-limage-de-octopi">http://[nom].local/ avec nom, le nom d'hote que vous auriez mis lors de l'installation de l'image de OctoPi</h6>
 <h6 id="httpip-avec-ip-ladresse-ip-de-la-raspberry">http://[ip] avec ip, l'adresse ip de la raspberry</h6>
 <h2 id="configuration-des-parametres">Configuration des paramètres</h2>
+<p><img alt="Setup" src="../assets/setup.png" /></p>
 <p>Les principaux paramètres incluent:</p>
 <h6 id="le-controle-dacces">Le controle d'accès</h6>
 <p>Vous devez y renseigner le nom d'utilisateur et le mot de passe nécessaires pour se connecter à l'interface web d'Octoprint. </p>
@@ -183,11 +190,13 @@ Cliquez ensuite sur "Connect" et c'est bon.</p>
 Toutes les autres fois, votre imprimante sera connectée à moins que vous vous soyez déconnecter.
 Par ailleurs, vous devez faire très attention aux warnings qui apparaitront sur la page de connexion.</p>
 <h3 id="nb">NB</h3>
+<h4 id="undervoltage-problem">Undervoltage Problem</h4>
 <p><img alt="Undervoltage Problem" src="../assets/undervoltage.png" /></p>
-<p>Si vous avez une erreur du type "Undervoltage detected", il s'agit du fait que votre raspberry recoit une tension inférieur à celle dont elle a besoin et cela peut affecter la qualité de vos impressions. De ce fait, je vous recommande de, soit changer le chargeur de votre raspberry (car inadéquat), soit relier l'alimentation de votre raspberry pi à celle de votre imprimante tout en vous assurant dans les 2 cas qu'une tension d'au moins 5V est delivrée a la raspberry. PHOTO</p>
+<p>Si vous avez une erreur du type "Undervoltage detected", il s'agit du fait que votre raspberry recoit une tension inférieur à celle dont elle a besoin et cela peut affecter la qualité de vos impressions. De ce fait, je vous recommande de, soit changer le chargeur de votre raspberry (car inadéquat), soit relier l'alimentation de votre raspberry pi à celle de votre imprimante tout en vous assurant dans les 2 cas qu'une tension d'au moins 5V est delivrée a la raspberry.</p>
+<h4 id="firmware-problem">Firmware Problem</h4>
 <p><img alt="Firmware Problem" src="../assets/firmware_problem.webp" /></p>
-<p>Si vous avez une erreur du type "Firmware Broken" (PHOTO), cela indique un problème au niveau du protocole de communication entre ton imprimante 3D et Octoprint. Néanmoins, cela peut etre réglé avec l'installation du plugin "NOM"
-Pour l'istallation du plugin, ....</p>
+<p>Si vous avez une erreur du type "Firmware Broken", cela indique un problème au niveau du protocole de communication entre ton imprimante 3D et Octoprint. Néanmoins, cela peut etre réglé avec l'installation du plugin "NOM"
+Pour l'installation du plugin, (PRINCIPE A AJOUTER)</p>
               
             </div>
           </div><footer>

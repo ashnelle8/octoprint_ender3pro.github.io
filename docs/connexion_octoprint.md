@@ -16,6 +16,8 @@ Pour accéder a l'interface web d'Octoprint, vous pouvez utiliser une de ces 2 U
 
 ## Configuration des paramètres
 
+![Setup](assets/setup.png)
+
 Les principaux paramètres incluent:
 
 ###### Le controle d'accès
@@ -50,13 +52,17 @@ Par ailleurs, vous devez faire très attention aux warnings qui apparaitront sur
 
 ### NB
 
+#### Undervoltage Problem
+
 ![Undervoltage Problem](assets/undervoltage.png)
 
-Si vous avez une erreur du type "Undervoltage detected", il s'agit du fait que votre raspberry recoit une tension inférieur à celle dont elle a besoin et cela peut affecter la qualité de vos impressions. De ce fait, je vous recommande de, soit changer le chargeur de votre raspberry (car inadéquat), soit relier l'alimentation de votre raspberry pi à celle de votre imprimante tout en vous assurant dans les 2 cas qu'une tension d'au moins 5V est delivrée a la raspberry. PHOTO
+Si vous avez une erreur du type "Undervoltage detected", il s'agit du fait que votre raspberry recoit une tension inférieur à celle dont elle a besoin et cela peut affecter la qualité de vos impressions. De ce fait, je vous recommande de, soit changer le chargeur de votre raspberry (car inadéquat), soit relier l'alimentation de votre raspberry pi à celle de votre imprimante tout en vous assurant dans les 2 cas qu'une tension d'au moins 5V est delivrée a la raspberry.
 
+
+#### Firmware Problem
 
 ![Firmware Problem](assets/firmware_problem.webp)
 
-Si vous avez une erreur du type "Firmware Broken" (PHOTO), cela indique un problème au niveau du protocole de communication entre ton imprimante 3D et Octoprint. Néanmoins, cela peut etre réglé avec l'installation du plugin "NOM"
-Pour l'istallation du plugin, ....
+Si vous avez une erreur du type "Firmware Broken", cela indique un problème au niveau du protocole de communication entre ton imprimante 3D et Octoprint. Néanmoins, cela peut etre réglé avec l'installation du plugin "NOM"
+Pour l'installation du plugin, (PRINCIPE A AJOUTER)
 
