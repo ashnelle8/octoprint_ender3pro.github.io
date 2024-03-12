@@ -8,7 +8,7 @@ OctoPi est une image de système d’exploitation pré-configurée basée sur le
 
 ### Obtention de Raspberry Pi Imager
 
-Le téléchargement de Rasperry Pi Imager se fait via le site officiel : https://www.raspberrypi.com/software/
+Le téléchargement de Rasperry Pi Imager se fait via le site officiel : [Téléchargement de Raspberry Pi Imager](https://www.raspberrypi.com/software/)
 
 ### Installation de l’image officielle OctoPi sur une micro carte SD
 
@@ -21,7 +21,7 @@ Ayez à votre disposition une micro carte SD vide car lors de l'installation, to
 Evitez également de retirer la carte lors de l'installation.
 ###### 5. Inserer la carte dans la Raspberry Pi
 
-Les détails de ces différentes étapes se trouvent sur le site officiel d'Octoprint: https://octoprint.org/download/
+Les détails de ces différentes étapes se trouvent sur le site officiel d'Octoprint: [Etapes d'installation d'Octoprint sur la micro carte SD](https://octoprint.org/download/)
 
 
 
