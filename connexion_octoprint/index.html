@@ -56,7 +56,7 @@
     <ul class="current">
     <li class="toctree-l2"><a class="reference internal" href="#branchement">Branchement</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#acces-a-octoprint">Acces a Octoprint</a>
+    <li class="toctree-l2"><a class="reference internal" href="#acces-a-octoprint">Accès à Octoprint</a>
         <ul>
     <li class="toctree-l3"><a class="reference internal" href="#httpnomlocal-avec-nom-le-nom-dhote-que-vous-auriez-mis-lors-de-linstallation-de-limage-de-octopi">http://[nom].local/ avec nom, le nom d'hote que vous auriez mis lors de l'installation de l'image de OctoPi</a>
     </li>
@@ -68,21 +68,25 @@
         <ul>
     <li class="toctree-l3"><a class="reference internal" href="#le-controle-dacces">Le controle d'accès</a>
     </li>
-    <li class="toctree-l3"><a class="reference internal" href="#suivi-anonyme-de-lutilisation">Suivi anonyme de l’utilisation</a>
+    <li class="toctree-l3"><a class="reference internal" href="#le-suivi-anonyme-de-lutilisation">Le suivi anonyme de l’utilisation</a>
     </li>
-    <li class="toctree-l3"><a class="reference internal" href="#verification-de-la-connectivite-en-ligne">Verification de la connectivite en ligne</a>
+    <li class="toctree-l3"><a class="reference internal" href="#verification-de-la-connectivite-en-ligne">Vérification de la connectivité en ligne</a>
     </li>
-    <li class="toctree-l3"><a class="reference internal" href="#liste-noire-de-plugins">Liste noire de plugins</a>
+    <li class="toctree-l3"><a class="reference internal" href="#la-liste-noire-de-plugins">La liste noire de plugins</a>
     </li>
-    <li class="toctree-l3"><a class="reference internal" href="#configuration-du-profil-de-limprimante">Configuration du profil de l'imprimante</a>
+    <li class="toctree-l3"><a class="reference internal" href="#la-configuration-du-profil-de-limprimante">La configuration du profil de l'imprimante</a>
     </li>
-    <li class="toctree-l3"><a class="reference internal" href="#commandes-du-serveur">Commandes du serveur</a>
+    <li class="toctree-l3"><a class="reference internal" href="#les-commandes-du-serveur">Les commandes du serveur</a>
     </li>
-    <li class="toctree-l3"><a class="reference internal" href="#enregistrements-par-webcam-et-en-accelere">Enregistrements par webcam et en accéléré</a>
+    <li class="toctree-l3"><a class="reference internal" href="#les-enregistrements-par-webcam-et-en-accelere">Les enregistrements par webcam et en accéléré</a>
     </li>
         </ul>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#connexion">Connexion</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#nb">NB</a>
+    </li>
+        </ul>
     </li>
     </ul>
                 </li>
@@ -146,29 +150,29 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="connexion-de-octoprint-a-limprimante-3d">Connexion de Octoprint a l’imprimante 3D</h1>
+                <h1 id="connexion-de-octoprint-a-limprimante-3d">Connexion de Octoprint à l’imprimante 3D</h1>
 <h2 id="branchement">Branchement</h2>
 <p>Votre Raspberry Pi éteinte, connectez votre micro processeur à l’imprimante 3D avec le bon câble USB. Une fois cela fait, allumez l’imprimante 3D, connectez le Pi à une source d’énergie et allumez-le.</p>
-<p>Vous pouvez vous murir d'un écran à brancher via HDMI avec le Pi pour suivre l'application de toutes les configurations faites. Pour une première fois, cela peut prendre un peu de temps mais après ce sera beaucoup plus rapide. Vous savez que l'opération est terminée lorsque vous voyez un prompt qui vous invite à vous connecter.</p>
-<h2 id="acces-a-octoprint">Acces a Octoprint</h2>
+<p>Vous pouvez vous munir d'un écran à brancher via HDMI avec le Pi pour suivre l'application de toutes les configurations faites. Pour une première fois, cela peut prendre un peu de temps mais après ce sera beaucoup plus rapide. Vous savez que l'opération est terminée lorsque vous voyez un prompt qui vous invite à vous connecter.</p>
+<h2 id="acces-a-octoprint">Accès à Octoprint</h2>
 <p>Après un démarrage réussi, connectez vous via n'importe quel navigateur mais sur le réseau qui a été configuré avec OctoPi. 
 Pour accéder a l'interface web d'Octoprint, vous pouvez utiliser une de ces 2 URLs:</p>
 <h6 id="httpnomlocal-avec-nom-le-nom-dhote-que-vous-auriez-mis-lors-de-linstallation-de-limage-de-octopi">http://[nom].local/ avec nom, le nom d'hote que vous auriez mis lors de l'installation de l'image de OctoPi</h6>
 <h6 id="httpip-avec-ip-ladresse-ip-de-la-raspberry">http://[ip] avec ip, l'adresse ip de la raspberry</h6>
 <h2 id="configuration-des-parametres">Configuration des paramètres</h2>
-<p>Les principaux parametres incluent:</p>
+<p>Les principaux paramètres incluent:</p>
 <h6 id="le-controle-dacces">Le controle d'accès</h6>
 <p>Vous devez y renseigner le nom d'utilisateur et le mot de passe nécessaires pour se connecter à l'interface web d'Octoprint. </p>
-<h6 id="suivi-anonyme-de-lutilisation">Suivi anonyme de l’utilisation</h6>
-<p>Vous decidez si vous souhaitez qu'OctoPrint collecte de maniere anonyme ou non des donnees de votre part.</p>
-<h6 id="verification-de-la-connectivite-en-ligne">Verification de la connectivite en ligne</h6>
-<h6 id="liste-noire-de-plugins">Liste noire de plugins</h6>
+<h6 id="le-suivi-anonyme-de-lutilisation">Le suivi anonyme de l’utilisation</h6>
+<p>Vous décidez si vous souhaitez qu'OctoPrint collecte de manière anonyme ou non des données de votre part.</p>
+<h6 id="verification-de-la-connectivite-en-ligne">Vérification de la connectivité en ligne</h6>
+<h6 id="la-liste-noire-de-plugins">La liste noire de plugins</h6>
 <p>Vous pouvez sélectionner certains plugins que vous mettrez dans votre liste noire.</p>
-<h6 id="configuration-du-profil-de-limprimante">Configuration du profil de l'imprimante</h6>
+<h6 id="la-configuration-du-profil-de-limprimante">La configuration du profil de l'imprimante</h6>
 <p>Vous devez mettre un nom pour votre imprimante et renseigner les valeurs correspondantes à votre imprimante.</p>
-<h6 id="commandes-du-serveur">Commandes du serveur</h6>
+<h6 id="les-commandes-du-serveur">Les commandes du serveur</h6>
 <p>Vous pouvez configurer les commandes du serveur qu’OctoPrint prendra en charge. </p>
-<h6 id="enregistrements-par-webcam-et-en-accelere">Enregistrements par webcam et en accéléré</h6>
+<h6 id="les-enregistrements-par-webcam-et-en-accelere">Les enregistrements par webcam et en accéléré</h6>
 <p>Vous pouvez configurer les paramètres de votre webcam et mettre en place des enregistrements en accéléré.
 Des lors, des que vous cliquez sur "Next" ou "Suivant", vous tomberez sur la page d'Octoprint en elle meme.</p>
 <h2 id="connexion">Connexion</h2>
@@ -176,7 +180,11 @@ Des lors, des que vous cliquez sur "Next" ou "Suivant", vous tomberez sur la pag
 Laissez "Serial Port" et "Baudrate" définis sur AUTO.
 Cliquez ensuite sur "Connect" et c'est bon.</p>
 <p>Vous n'aurez à faire cette étape qu'une fois.
-Toutes les autres fois, votre imprimante sera connectée à moins que vous vous soyez déconnecter.</p>
+Toutes les autres fois, votre imprimante sera connectée à moins que vous vous soyez déconnecter.
+Par ailleurs, vous devez faire très attention aux warnings qui apparaitront sur la page de connexion.</p>
+<h3 id="nb">NB</h3>
+<p>Si vous avez une erreur du type "Undervoltage detected", il s'agit du fait que votre raspberry recoit une tension inférieur à celle dont elle a besoin et cela peut affecter la qualité de vos impressions. De ce fait, je vous recommande de, soit changer le chargeur de votre raspberry (car inadéquat), soit relier l'alimentation de votre raspberry pi à celle de votre imprimante tout en vous assurant dans les 2 cas qu'une tension d'au moins 5V est delivrée a la raspberry. PHOTO</p>
+<p>Si vous avez une erreur du type "Firmware Broken" (PHOTO), cela indique un problème au niveau du protocole de communication entre ton imprimante 3D et Octoprint. Néanmoins, cela peut etre réglé avec l'installation du plugin "NOM" </p>
               
             </div>
           </div><footer>
