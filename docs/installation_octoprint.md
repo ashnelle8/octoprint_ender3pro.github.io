@@ -12,6 +12,8 @@ Le téléchargement de Rasperry Pi Imager se fait via le site officiel : [Télé
 
 ### Installation de l’image officielle OctoPi sur une micro carte SD
 
+![Imager](assets/imager.png)
+
 Une fois Raspberry Pi Imager installé, il faut :
 ###### 1. Lancer l'application
 ###### 2. Trouver l'image de OctoPi

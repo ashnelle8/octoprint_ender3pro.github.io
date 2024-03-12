@@ -2,7 +2,7 @@
 
 ## Qu'est ce que Octoprint ?
 
-OctoPrint est un logiciel open source conçu spécifiquement pour les imprimantes 3D. Il offre une interface web qui permet aux utilisateurs de contrôler et de surveiller à distance leurs imprimantes 3D. OctoPrint peut être installé sur un Raspberry Pi ou sur un autre ordinateur, puis connecté à l'imprimante 3D via USB.
+OctoPrint est un logiciel open source conçu spécifiquement pour les imprimantes 3D. Il offre une interface web qui permet aux utilisateurs de contrôler et de surveiller à distance leurs imprimantes 3D. OctoPrint peut être installé sur un Raspberry Pi ou sur un autre ordinateur, puis connecté à l'imprimante 3D via cable USB.
 
 ## Quels sont les avantages qu'Octoprint apportent ?
 
