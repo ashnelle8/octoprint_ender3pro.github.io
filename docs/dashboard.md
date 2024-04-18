@@ -24,7 +24,7 @@ Lors du parametrage du plugin, vous aurez la possibilite d'activer ce que vous v
 
 ## Apercu du plugin
 
-(PHOTO)
+![installation](assets/dashboard.png)
 
 Le dashboard affichera lors d'une impression tout ce qui aurait ete active lors du parametrage. Dans ce cas par exemple, on a acces a : (CITER) 
 

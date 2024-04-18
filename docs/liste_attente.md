@@ -37,7 +37,7 @@ Lors du paramètrage du plugin, vous aurez la possibilité d'activer les paramè
 
 ## Apercu du plugin (NOM DU PLUGIN)
 
-(PHOTO)
+![installation](assets/continuous.png)
 
 Le liste d'attente affichera lors d'une impression tout ce qui aurait été activé lors du paramètrage. Dans ce cas par exemple, on a accès a toutes les impressions (job et leurs détails(quantité a faire, impression réussie ou non, temps d'impression, quantité de consommable utilisé). 
 
