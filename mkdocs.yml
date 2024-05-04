@@ -10,6 +10,7 @@ nav:
   - Mécanisme de mise en place de liste d’attente : liste_attente.md
   - Mécanisme de mise en place d’un Dashboard : dashboard.md
   - Controle de l'alimentation de l'imprimante 3D : circuit.md
+  - Accessibilité à Octoprint : accessibilite.md
   - Installation d’un web cam, configuration et gestion des time lapses : webcam.md
   - Mécanisme de lancement automatique de l’imprimante après une coupure de courant : lancement.md
   - Mécanisme de mise en place de micro-production : microproduction.md
