@@ -76,11 +76,27 @@
     </li>
         </ul>
     </li>
+    <li class="toctree-l2"><a class="reference internal" href="#apercu-initial-doctoprint">Apercu initial d'Octoprint</a>
+    </li>
     <li class="toctree-l2"><a class="reference internal" href="#connexion">Connexion</a>
         <ul>
     <li class="toctree-l3"><a class="reference internal" href="#undervoltage-problem">Undervoltage Problem</a>
     </li>
     <li class="toctree-l3"><a class="reference internal" href="#firmware-problem">Firmware Problem</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#description-des-elements-de-base-doctoprint">Description des éléments de base d'Octoprint</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#temperature">Temperature</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#control">Control</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#gcode-viewer">GCode Viewer</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#terminal">Terminal</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#timelapse">Timelapse</a>
     </li>
         </ul>
     </li>
@@ -105,6 +121,10 @@
               </ul>
               <ul>
                 <li class="toctree-l1"><a class="reference internal" href="../circuit/">Controle de l'alimentation de l'imprimante 3D</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../accessibilite/">Accessibilité à Octoprint</a>
                 </li>
               </ul>
               <ul>
@@ -148,7 +168,8 @@
 <p>Votre Raspberry Pi éteinte, connectez votre micro processeur à l’imprimante 3D avec le bon câble USB. Une fois cela fait, allumez l’imprimante 3D, connectez le Pi à une source d’énergie et allumez-le.</p>
 <p>Vous pouvez vous munir d'un écran à brancher via HDMI avec le Pi pour suivre l'application de toutes les configurations faites. Pour une première fois, cela peut prendre un peu de temps mais après ce sera beaucoup plus rapide. Vous savez que l'opération est terminée lorsque vous voyez un prompt qui vous invite à vous connecter.</p>
 <h2 id="acces-a-octoprint">Accès à Octoprint</h2>
-<p>Après un démarrage réussi, connectez vous via n'importe quel navigateur mais sur le réseau qui a été configuré avec OctoPi. 
+<p><img alt="Undervoltage Problem" src="../assets/undervoltage.png" />
+Après un démarrage réussi, connectez vous via n'importe quel navigateur mais sur le réseau qui a été configuré avec OctoPi. 
 Pour accéder a l'interface web d'Octoprint, vous pouvez utiliser une de ces 2 URLs:</p>
 <p><strong>http://[nom].local/</strong> avec nom, le nom d'hote que vous auriez mis lors de l'installation de l'image de OctoPi
 <strong>http://[ip]</strong> avec ip, l'adresse ip de la raspberry</p>
@@ -169,13 +190,16 @@ Pour accéder a l'interface web d'Octoprint, vous pouvez utiliser une de ces 2 U
 <h6 id="les-enregistrements-par-webcam-et-en-accelere">Les enregistrements par webcam et en accéléré</h6>
 <p>Vous pouvez configurer les paramètres de votre webcam et mettre en place des enregistrements en accéléré.
 Des lors, des que vous cliquez sur "Next" ou "Suivant", vous tomberez sur la page d'Octoprint en elle meme.</p>
+<h2 id="apercu-initial-doctoprint">Apercu initial d'Octoprint</h2>
+<p>Voici comment se presente Octoprint juste avant la connexion :
+<img alt="Undervoltage Problem" src="../assets/octoprint_debut.png" /></p>
 <h2 id="connexion">Connexion</h2>
 <p>Au niveau des paramètres en haut à gauche, cochez les cases "Save connection settings" et "Auto-connect on server startup".
 Laissez "Serial Port" et "Baudrate" définis sur AUTO.
 Cliquez ensuite sur "Connect" et c'est bon.</p>
 <p>Vous n'aurez à faire cette étape qu'une fois.
 Toutes les autres fois, votre imprimante sera connectée à moins que vous vous soyez déconnecter.
-Par ailleurs, vous devez faire très attention aux warnings qui apparaitront sur la page de connexion+:</p>
+Par ailleurs, vous devez faire très attention aux warnings qui apparaitront sur la page de connexion:</p>
 <h4 id="undervoltage-problem">Undervoltage Problem</h4>
 <p><img alt="Undervoltage Problem" src="../assets/undervoltage.png" /></p>
 <p>Si vous avez une erreur du type <strong>Undervoltage detected</strong>, il s'agit du fait que votre raspberry recoit une tension inférieure à celle dont elle a besoin et cela peut affecter la qualité de vos impressions. De ce fait, je vous recommande de, soit changer le chargeur de votre raspberry (car inadéquat), soit relier l'alimentation de votre raspberry pi à celle de votre imprimante tout en vous assurant dans les 2 cas qu'une tension d'au moins <strong>5V</strong> est delivrée a la raspberry.</p>
@@ -190,6 +214,17 @@ Pour l'installation du plugin : </p>
 <p>Entrez <strong>Creality-2x-temperature-reporting-fix</strong> au niveau de la barre de recherche puis sur <strong>Install</strong>.</p>
 <p><img alt="installation" src="../assets/installation.png" /></p>
 <p>Suivez ensuite les instructions pour redémarrer Octoprint.</p>
+<h2 id="description-des-elements-de-base-doctoprint">Description des éléments de base d'Octoprint</h2>
+<h5 id="temperature">Temperature</h5>
+<p>C'est un composant qui permet de surveiller et de contrôler les températures de l'imprimante 3D. Il affiche les températures actuelles des extrudeurs, du lit chauffant et éventuellement d'autres composants. Vous pouvez ajuster les températures cibles et surveiller les changements en temps réel.</p>
+<h5 id="control">Control</h5>
+<p>Cet élément vous permet de contrôler les mouvements de l'imprimante 3D. Vous pouvez démarrer, mettre en pause, reprendre ou arrêter l'impression en cours. Vous pouvez également déplacer manuellement l'extrudeur et le plateau chauffant selon les axes X, Y et Z.</p>
+<h5 id="gcode-viewer">GCode Viewer</h5>
+<p>Le visualiseur de GCode affiche le modèle 3D en cours d'impression sous forme de représentation graphique. Il vous permet de suivre la progression de l'impression couche par couche et de repérer d'éventuels problèmes ou erreurs dans le modèle.</p>
+<h5 id="terminal">Terminal</h5>
+<p>Le terminal fournit une interface en ligne de commande pour communiquer directement avec l'imprimante 3D via OctoPrint. Vous pouvez envoyer des commandes GCode personnalisées, vérifier le statut de l'imprimante et afficher les messages de retour pour diagnostiquer les problèmes.</p>
+<h5 id="timelapse">Timelapse</h5>
+<p>La fonction de timelapse permet de capturer des séquences vidéo de l'impression en cours. Cela vous permet de créer des vidéos accélérées montrant tout le processus d'impression, ce qui peut être utile pour surveiller l'avancement à distance ou pour partager des vidéos de vos créations avec d'autres personnes.</p>
               
             </div>
           </div><footer>

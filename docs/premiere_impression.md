@@ -28,7 +28,7 @@ On peut arreter l'impression en cliquant sur "Cancel" ou la mettre en pause en c
 
 ![Imager](assets/pause.png)
 
-Pour toutes les impressions, ce sera a peu pres les memes etapes a quelques details pres en fonction des plugins et des features ajoutes.
+Pour toutes les impressions, ce sera a peu pres les memes étapes a quelques details pres en fonction des plugins et des features ajoutés.
 
 
 

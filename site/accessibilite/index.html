@@ -3,18 +3,18 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://example.com/microproduction/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://example.com/accessibilite/" />
       <link rel="shortcut icon" href="../img/favicon.ico" />
-    <title>Mécanisme de mise en place de micro-production - Octoprint For Ender3pro</title>
+    <title>Accessibilité à Octoprint - Octoprint For Ender3pro</title>
     <link rel="stylesheet" href="../css/theme.css" />
     <link rel="stylesheet" href="../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
     
       <script>
         // Current page data
-        var mkdocs_page_name = "M\u00e9canisme de mise en place de micro-production";
-        var mkdocs_page_input_path = "microproduction.md";
-        var mkdocs_page_url = "/microproduction/";
+        var mkdocs_page_name = "Accessibilit\u00e9 \u00e0 Octoprint";
+        var mkdocs_page_input_path = "accessibilite.md";
+        var mkdocs_page_url = "/accessibilite/";
       </script>
     
     <!--[if lt IE 9]>
@@ -75,8 +75,14 @@
                 <li class="toctree-l1"><a class="reference internal" href="../circuit/">Controle de l'alimentation de l'imprimante 3D</a>
                 </li>
               </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../accessibilite/">Accessibilité à Octoprint</a>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="./">Accessibilité à Octoprint</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#octoeverywhere">OctoEverywhere</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#utilisation-doctoeverywhere">Utilisation d'OctoEverywhere</a>
+    </li>
+    </ul>
                 </li>
               </ul>
               <ul>
@@ -87,8 +93,8 @@
                 <li class="toctree-l1"><a class="reference internal" href="../lancement/">Mécanisme de lancement automatique de l’imprimante après une coupure de courant</a>
                 </li>
               </ul>
-              <ul class="current">
-                <li class="toctree-l1 current"><a class="reference internal current" href="./">Mécanisme de mise en place de micro-production</a>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../microproduction/">Mécanisme de mise en place de micro-production</a>
                 </li>
               </ul>
       </div>
@@ -105,7 +111,7 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
-      <li class="breadcrumb-item active">Mécanisme de mise en place de micro-production</li>
+      <li class="breadcrumb-item active">Accessibilité à Octoprint</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -114,12 +120,23 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                
+                <h1 id="accessibilite-a-octoprint">Accessibilité à Octoprint</h1>
+<p>Afin d'améliorer considérablement l'expérience utilisateur avec OctoPrint, une fonctionnalité essentielle a été intégrée : la possibilité de se connecter à la plateforme sans les contraintes habituelles du réseau Wifi, telles que les configurations initiales fastidieuses.</p>
+<h2 id="octoeverywhere">OctoEverywhere</h2>
+<p>OctoEverywhere représente la solution innovante adoptée pour surmonter cette barrière. Cette fonctionnalité révolutionnaire permet aux utilisateurs d'accéder à leur instance OctoPrint de manière transparente et sécurisée, quel que soit leur emplacement géographique ou leur réseau local. En utilisant OctoEverywhere, les utilisateurs peuvent se connecter à leur imprimante 3D et gérer leurs travaux d'impression à distance, sans avoir à configurer manuellement les paramètres réseau ou à se soucier des limitations de connexion.</p>
+<p>L'infrastructure sous-jacente d'OctoEverywhere utilise une technologie de pointe pour créer un tunnel sécurisé entre l'utilisateur et son instance OctoPrint. Cela garantit une communication fiable et sécurisée, préservant ainsi la confidentialité des données et offrant une expérience utilisateur fluide et sans tracas.</p>
+<p>En permettant un accès à distance à OctoPrint via OctoEverywhere, cette fonctionnalité élargit considérablement les possibilités d'utilisation de l'impression 3D. Les utilisateurs peuvent surveiller et contrôler leurs impressions à partir de n'importe quel appareil connecté à Internet, que ce soit un ordinateur de bureau, un smartphone ou une tablette, offrant ainsi une flexibilité inégalée et une plus grande commodité dans la gestion des projets d'impression.</p>
+<h2 id="utilisation-doctoeverywhere">Utilisation d'OctoEverywhere</h2>
+<p>Pour utiliser OctoEverywhere, l'utilisateur doit d'abord l'installer comme un plugin dans OctoPrint, puis suivre les instructions pour se connecter à la plateforme OctoEverywhere.</p>
+<p>Une fois la connexion établie, voici l'interface présentée :</p>
+<p><img alt="Setup" src="../assets/octoeverywhere.png" /></p>
+<p>Ensuite, lorsque l'utilisateur clique sur <strong>Connect</strong>, il est redirigé vers une page présentant exactement les mêmes caractéristiques que celles d'OctoPrint. Cela signifie que l'utilisateur peut accéder à toutes les fonctionnalités familières d'OctoPrint, y compris le contrôle de l'imprimante, la surveillance des températures, l'affichage du visualiseur GCode et bien plus encore, mais avec la facilité d'accès offerte par OctoEverywhere.</p>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../lancement/" class="btn btn-neutral float-left" title="Mécanisme de lancement automatique de l’imprimante après une coupure de courant"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../circuit/" class="btn btn-neutral float-left" title="Controle de l'alimentation de l'imprimante 3D"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../webcam/" class="btn btn-neutral float-right" title="Installation d’un web cam, configuration et gestion des time lapses">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -142,8 +159,10 @@
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../lancement/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../circuit/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
+    
+      <span><a href="../webcam/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>
