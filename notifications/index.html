@@ -61,6 +61,10 @@
               </ul>
               <ul class="current">
                 <li class="toctree-l1 current"><a class="reference internal current" href="./">Mécanisme d’envoi de notifications</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#obico-pour-octoprint">Obico pour Octoprint</a>
+    </li>
+    </ul>
                 </li>
               </ul>
               <ul>
@@ -73,6 +77,10 @@
               </ul>
               <ul>
                 <li class="toctree-l1"><a class="reference internal" href="../circuit/">Controle de l'alimentation de l'imprimante 3D</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../accessibilite/">Accessibilité à Octoprint</a>
                 </li>
               </ul>
               <ul>
@@ -110,7 +118,13 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                
+                <h1 id="mecanisme-denvoi-de-notifications">Mécanisme d’envoi de notifications</h1>
+<p>Pour l'envoi des notifications, j'avais opté pour l'envoi de courriels directement via Octoprint. Dans cette optique, j'ai exploré la mise en œuvre du processus à travers un plugin nommé <strong>OctoText</strong>.</p>
+<p>OctoText est un plugin de notification permettant d'envoyer des messages textuels ou des courriels en réponse à des événements configurables de l'imprimante. Tout ce qui est nécessaire, c'est un compte de messagerie électronique ! L'état de l'imprimante, ainsi qu'une capture d'écran de la webcam si elle est configurée, seront envoyés soit par courriel, soit par SMS.</p>
+<p>Cependant, malgré toutes les configurations effectuées, le plugin indiquait avoir envoyé les courriels, mais ceux-ci n'étaient jamais reçus, que ce soit avec une adresse Gmail ou Outlook.</p>
+<p>Par conséquent, j'ai opté pour une autre solution : l'installation d'une application permettant de suivre l'évolution des impressions directement sur son téléphone portable. Cette application s'appelle <strong>Obico</strong>.</p>
+<h2 id="obico-pour-octoprint">Obico pour Octoprint</h2>
+<p>Obico est une application offrant un accès complet aux fonctionnalités d'Octoprint, avec en prime la réception de notifications en temps réel. En effet, Obico envoie des notifications pour le début et la fin d'une impression, ainsi que pour les pourcentages d'avancement des impressions.</p>
               
             </div>
           </div><footer>
