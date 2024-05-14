@@ -29,11 +29,11 @@ Un tableau de bord personnalisé peut être configuré dans OctoPrint pour affic
 Pour une intégration plus poussée, nous aborderons la réalisation d'un circuit qui permettra de controler à distance l'alimentation de votre imprimante. Vous pourrez ainsi allumer votre imprimante pour lancer des impressions ou arrêter votre imprimante à distance en cas d'urgence ou lorsque l'impression est terminée. Cette fonctionnalité peut contribuer à la sécurité et à la gestion efficace de vos impressions.
 
 ###### Installation d’un web cam, configuration et gestion des time lapses
-
+Pour une intégration plus poussée, nous aborderons l'integration d'une web cam afin de pourvoir observer de n'importe quel lieu, l'etat de l'impression et pouvoir realiser les time des impressions.
 
 ###### Mécanisme de lancement automatique de l’imprimante après une coupure de courant
+Afin d'optimiser au mieux les imprimantes 3D, un mecanisme de lancement de l'imprimante apres une interrruption du courant sera mise en place. De ce fait, les impressions pourront reprendre directement apres que le courant soit retablit.
 
-
-###### Mécanisme de mise en place de micro-production 
+###### Mécanisme de mise en place de micro-production
 
 
