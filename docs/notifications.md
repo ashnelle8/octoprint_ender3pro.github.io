@@ -11,5 +11,9 @@ Par conséquent, j'ai opté pour une autre solution : l'installation d'une appli
 ##Obico pour Octoprint
 
 Obico est une application offrant un accès complet aux fonctionnalités d'Octoprint, avec en prime la réception de notifications en temps réel. En effet, Obico envoie des notifications pour le début et la fin d'une impression, ainsi que pour les pourcentages d'avancement des impressions.
+![Imager](assets/obico.png)
+![Imager](assets/obico_notif.png)
 
+**NB:**
+Lorsque la webcam n'est pas encore installee et configuree, Obico envoie des alertes comme celles ci: **Webcam streaming not working in OctoPrint** qui sera affichee dans un cadran rouge en haut a droite sur la page de Octoprint. Vous pouvez egalement recevoir cette alerte directement sur votre appareil via Obico.
 
