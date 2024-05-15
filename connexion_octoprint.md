@@ -48,9 +48,9 @@ Voici comment se presente Octoprint juste avant la connexion :
 ![Undervoltage Problem](assets/octoprint_debut.png)
 
 ## Connexion
-Au niveau des paramètres en haut à gauche, cochez les cases "Save connection settings" et "Auto-connect on server startup".
+Au niveau des paramètres en haut à gauche, cochez les cases **Save connection settings** et **Auto-connect on server startup**.
 Laissez **Serial Port** et **Baudrate** définis sur **AUTO**.
-Cliquez ensuite sur "Connect" et c'est bon.
+Cliquez ensuite sur **Connect** et c'est bon.
 
 Vous n'aurez à faire cette étape qu'une fois.
 Toutes les autres fois, votre imprimante sera connectée à moins que vous vous soyez déconnecter.
