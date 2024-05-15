@@ -3,18 +3,18 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://example.com/circuit/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://example.com/difficultes/" />
       <link rel="shortcut icon" href="../img/favicon.ico" />
-    <title>Controle de l'alimentation de l'imprimante 3D - Octoprint For Ender3pro</title>
+    <title>Remarques - Octoprint For Ender3pro</title>
     <link rel="stylesheet" href="../css/theme.css" />
     <link rel="stylesheet" href="../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
     
       <script>
         // Current page data
-        var mkdocs_page_name = "Controle de l\u0027alimentation de l\u0027imprimante 3D";
-        var mkdocs_page_input_path = "circuit.md";
-        var mkdocs_page_url = "/circuit/";
+        var mkdocs_page_name = "Remarques";
+        var mkdocs_page_input_path = "difficultes.md";
+        var mkdocs_page_url = "/difficultes/";
       </script>
     
     <!--[if lt IE 9]>
@@ -71,22 +71,8 @@
                 <li class="toctree-l1"><a class="reference internal" href="../dashboard/">Mécanisme de mise en place d’un Dashboard</a>
                 </li>
               </ul>
-              <ul class="current">
-                <li class="toctree-l1 current"><a class="reference internal current" href="./">Controle de l'alimentation de l'imprimante 3D</a>
-    <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#materiel-utilise">Matériel utilisé</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#mise-en-uvre">Mise en œuvre</a>
-        <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#connexion-du-relais">Connexion du relais</a>
-    </li>
-        </ul>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#configuration-du-plugin-psu-control">Configuration du plugin PSU Control</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#test-du-systeme">Test du système</a>
-    </li>
-    </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../circuit/">Controle de l'alimentation de l'imprimante 3D</a>
                 </li>
               </ul>
               <ul>
@@ -105,8 +91,10 @@
                 <li class="toctree-l1"><a class="reference internal" href="../microproduction/">Mécanisme de mise en place de micro-production</a>
                 </li>
               </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../difficultes/">Remarques</a>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="./">Remarques</a>
+    <ul class="current">
+    </ul>
                 </li>
               </ul>
       </div>
@@ -123,7 +111,7 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
-      <li class="breadcrumb-item active">Controle de l'alimentation de l'imprimante 3D</li>
+      <li class="breadcrumb-item active">Remarques</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -132,58 +120,29 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="controle-de-lalimentation-de-limprimante-3d">Controle de l'alimentation de l'imprimante 3D</h1>
-<p>Pour améliorer le contrôle de l'alimentation de l'imprimante 3D, un système a ete mis en place afin de pouvoir aussi alllumer ou eteindre l'imprimante a distance.</p>
-<h3 id="materiel-utilise">Matériel utilisé</h3>
-<ul>
-<li><strong>Relais</strong> : Un relais pour contrôler l'alimentation électrique de l'imprimante.</li>
-<li><strong>Raspberry Pi</strong> : Utilisé pour piloter le relais et exécuter le plugin Octoprint.</li>
-<li><strong>Câbles jumper</strong> : Pour les connexions électriques entre le Raspberry Pi et le relais.</li>
-</ul>
-<h3 id="mise-en-uvre">Mise en œuvre</h3>
-<h5 id="connexion-du-relais">Connexion du relais</h5>
+                <h3 id="remarques">Remarques</h3>
+<p>À chaque étape, j'ai notifié toute difficulté rencontrée. Voici maintenant les remarques indépendantes des étapes précédentes.</p>
 <ol>
 <li>
-<p>Raccordement électrique : Connectez le relais à une source d'alimentation et à l'imprimante 3D. Le relais sera intercalé entre la prise de courant et l'imprimante.</p>
+<p>Combinaison d'impression normale et avec Octoprint :
+La combinaison de l'impression normale et celle avec Octoprint n'est pas toujours aisée. Par exemple, si une impression a été lancée avec Octoprint, il peut être difficile de l'arrêter manuellement. Cependant, certaines actions, comme enfiler le filament ou calibrer le plateau, sont plus faciles à exécuter manuellement. Pour optimiser l'utilisation de l'imprimante, j'ai réalisé un guide indiquant quelles actions effectuer manuellement et lesquelles utiliser avec Octoprint.</p>
 </li>
 <li>
-<p>Connexions avec le Raspberry Pi :</p>
+<p>Connexion de l'imprimante à Octoprint :
+Lorsque vous connectez votre imprimante à Octoprint, assurez-vous que le <strong>Baudrate</strong> est défini sur <strong>AUTO</strong>, surtout si vous ne connaissez pas les valeurs nécessaires pour votre imprimante. Dans le cas contraire, vous pourriez rencontrer des erreurs de connexion.</p>
 </li>
-<li>Connectez le VCC du relais au pin 5V du Raspberry Pi.</li>
-<li>Connectez le GND du relais au pin GND du Raspberry Pi.</li>
-<li>Connectez l’IN du relais à un pin GPIO disponible sur le Raspberry Pi (par exemple GPIO 02 dans notre cas).</li>
+<li>
+<p>Mises à jour d'Octoprint :
+Il est essentiel de toujours effectuer les mises à jour d'Octoprint pour éviter des erreurs comme celle-ci :
+    (PHOTO)
+Pour résoudre ce type de problème, j'ai commencé par désactiver Connectivity Check sous Settings --&gt; Server, puis j'ai redémarré Octoprint, réactivé la connexion et effectué les mises à jour.</p>
+</li>
 </ol>
-<h3 id="configuration-du-plugin-psu-control">Configuration du plugin PSU Control</h3>
-<ol>
-<li><strong>Installation du plugin</strong></li>
-<li>Ouvrez Octoprint et allez dans le gestionnaire de plugins.</li>
-<li>
-<p>Recherchez et installez le plugin <strong>PSU Control</strong>.</p>
-</li>
-<li>
-<p><strong>Configuration du plugin</strong></p>
-</li>
-<li>Accédez aux paramètres du plugin PSU Control.</li>
-<li>Configurez le plugin pour utiliser le GPIO que vous avez connecté au relais (par exemple GPIO 02 dans notre cas).</li>
-<li>Définissez les paramètres pour contrôler l'alimentation (par exemple, les délais de mise sous/hors tension).</li>
-</ol>
-<h3 id="test-du-systeme">Test du système</h3>
-<ul>
-<li>Allumez le Raspberry Pi et démarrez Octoprint.</li>
-<li>Dans Octoprint, utilisez l'icone en forme d'eclair du plugin PSU Control pour activer et désactiver le relais.
-<img alt="Imager" src="../assets/eclair.png" /></li>
-<li>Vérifiez que l’imprimante s’allume et s’éteint en conséquence.</li>
-</ul>
-<p><strong>NB:</strong>
-Si <strong>PSU Control</strong> est configuré pour que l'imprimante soit éteinte au démarrage, vous pourriez rencontrer certaines anomalies. En effet, tant que le câble d'alimentation du Raspberry Pi est connecté à l'imprimante, le panneau de commande de cette dernière peut sembler allumé alors qu'elle ne l'est pas réellement. Cela devient évident lorsque vous tentez d'effectuer des manipulations sur l'imprimante : rien ne fonctionne, ni les moteurs, ni aucune autre fonction.</p>
-<p>Il est donc essentiel, après avoir accédé à la page d'Octoprint, d'allumer l'imprimante en cliquant sur l'icône en forme d'éclair.</p>
-<p>En revanche, si vous configurez <strong>PSU Control</strong> pour que l'imprimante soit allumée au démarrage, vous éviterez ce problème. Toutefois, il est important de penser à éteindre l'imprimante après utilisation pour économiser de l'électricité. Par ailleurs, vous serez confronté à un problème visuel. En effet, l'icône en forme d'éclair sera grisée, semblant inactive lorsque l'imprimante est allumée, et éclairée lorsqu'elle est éteinte, ce qui peut prêter à confusion.</p>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../dashboard/" class="btn btn-neutral float-left" title="Mécanisme de mise en place d’un Dashboard"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../accessibilite/" class="btn btn-neutral float-right" title="Accessibilité à Octoprint">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../microproduction/" class="btn btn-neutral float-left" title="Mécanisme de mise en place de micro-production"><span class="icon icon-circle-arrow-left"></span> Previous</a>
     </div>
 
   <hr/>
@@ -206,10 +165,8 @@ Si <strong>PSU Control</strong> est configuré pour que l'imprimante soit étein
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../dashboard/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../microproduction/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
-    
-      <span><a href="../accessibilite/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>

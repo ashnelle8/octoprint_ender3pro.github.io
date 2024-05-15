@@ -14,4 +14,5 @@ nav:
   - Installation d’un web cam, configuration et gestion des time lapses : webcam.md
   - Mécanisme de lancement automatique de l’imprimante après une coupure de courant : lancement.md
   - Mécanisme de mise en place de micro-production : microproduction.md
+  - Remarques : difficultes.md
 theme: readthedocs

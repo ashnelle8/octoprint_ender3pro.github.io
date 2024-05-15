@@ -73,6 +73,20 @@
               </ul>
               <ul class="current">
                 <li class="toctree-l1 current"><a class="reference internal current" href="./">Controle de l'alimentation de l'imprimante 3D</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#materiel-utilise">Matériel utilisé</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#mise-en-uvre">Mise en œuvre</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#connexion-du-relais">Connexion du relais</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#configuration-du-plugin-psu-control">Configuration du plugin PSU Control</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#test-du-systeme">Test du système</a>
+    </li>
+    </ul>
                 </li>
               </ul>
               <ul>
@@ -114,7 +128,52 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <p>Notifier le moyen par lequel j'ai realise le circuit.</p>
+                <h1 id="controle-de-lalimentation-de-limprimante-3d">Controle de l'alimentation de l'imprimante 3D</h1>
+<p>Pour améliorer le contrôle de l'alimentation de l'imprimante 3D, un système a ete mis en place afin de pouvoir aussi alllumer ou eteindre l'imprimante a distance.</p>
+<h3 id="materiel-utilise">Matériel utilisé</h3>
+<ul>
+<li><strong>Relais</strong> : Un relais pour contrôler l'alimentation électrique de l'imprimante.</li>
+<li><strong>Raspberry Pi</strong> : Utilisé pour piloter le relais et exécuter le plugin Octoprint.</li>
+<li><strong>Câbles jumper</strong> : Pour les connexions électriques entre le Raspberry Pi et le relais.</li>
+</ul>
+<h3 id="mise-en-uvre">Mise en œuvre</h3>
+<h5 id="connexion-du-relais">Connexion du relais</h5>
+<ol>
+<li>
+<p>Raccordement électrique : Connectez le relais à une source d'alimentation et à l'imprimante 3D. Le relais sera intercalé entre la prise de courant et l'imprimante.</p>
+</li>
+<li>
+<p>Connexions avec le Raspberry Pi :</p>
+</li>
+<li>Connectez le VCC du relais au pin 5V du Raspberry Pi.</li>
+<li>Connectez le GND du relais au pin GND du Raspberry Pi.</li>
+<li>Connectez l’IN du relais à un pin GPIO disponible sur le Raspberry Pi (par exemple GPIO 02 dans notre cas).</li>
+</ol>
+<h3 id="configuration-du-plugin-psu-control">Configuration du plugin PSU Control</h3>
+<ol>
+<li><strong>Installation du plugin</strong></li>
+<li>Ouvrez Octoprint et allez dans le gestionnaire de plugins.</li>
+<li>
+<p>Recherchez et installez le plugin <strong>PSU Control</strong>.</p>
+</li>
+<li>
+<p><strong>Configuration du plugin</strong></p>
+</li>
+<li>Accédez aux paramètres du plugin PSU Control.</li>
+<li>Configurez le plugin pour utiliser le GPIO que vous avez connecté au relais (par exemple GPIO 02 dans notre cas).</li>
+<li>Définissez les paramètres pour contrôler l'alimentation (par exemple, les délais de mise sous/hors tension).</li>
+</ol>
+<h3 id="test-du-systeme">Test du système</h3>
+<ul>
+<li>Allumez le Raspberry Pi et démarrez Octoprint.</li>
+<li>Dans Octoprint, utilisez l'icone en forme d'eclair du plugin PSU Control pour activer et désactiver le relais.
+<img alt="Imager" src="../assets/eclair.png" /></li>
+<li>Vérifiez que l’imprimante s’allume et s’éteint en conséquence.</li>
+</ul>
+<p><strong>NB:</strong>
+Si <strong>PSU Control</strong> est configuré pour que l'imprimante soit éteinte au démarrage, vous pourriez rencontrer certaines anomalies. En effet, tant que le câble d'alimentation du Raspberry Pi est connecté à l'imprimante, le panneau de commande de cette dernière peut sembler allumé alors qu'elle ne l'est pas réellement. Cela devient évident lorsque vous tentez d'effectuer des manipulations sur l'imprimante : rien ne fonctionne, ni les moteurs, ni aucune autre fonction.</p>
+<p>Il est donc essentiel, après avoir accédé à la page d'Octoprint, d'allumer l'imprimante en cliquant sur l'icône en forme d'éclair.</p>
+<p>En revanche, si vous configurez <strong>PSU Control</strong> pour que l'imprimante soit allumée au démarrage, vous éviterez ce problème. Toutefois, il est important de penser à éteindre l'imprimante après utilisation pour économiser de l'électricité. Par ailleurs, vous serez confronté à un problème visuel. En effet, l'icône en forme d'éclair sera grisée, semblant inactive lorsque l'imprimante est allumée, et éclairée lorsqu'elle est éteinte, ce qui peut prêter à confusion.</p>
               
             </div>
           </div><footer>
