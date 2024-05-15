@@ -13,12 +13,12 @@ Lors de la première impression via Octoprint, il faut:
 
 Dès lors, on remarque qu'au niveau des températures, celle du plateau monte progressivement à 60 et celle de la buse à 200. Cela se remarque au niveau du graphe et c'est écrit juste en bas également.
 
-![Imager](assets/debut_t.png "Temperatures au debut du lancement de l'impression")
+![Imager](assets/debut_t.png "Températures au debut du lancement de l'impression")
 
-![Imager](assets/entrain_t.png "Temperatures montant progresivement")
+![Imager](assets/entrain_t.png "Températures montant progresivement")
 
 L'impression démarre uniquement lorsque la température du plateau est à 60 et celle de la buse à 200.
-![Imager](assets/fin_t.png "Temperature finale du plateau (60) et celle de la buse (200)")
+![Imager](assets/fin_t.png "Température finale du plateau (60) et celle de la buse (200)")
 
 Dès que les températures sus-citées sont atteintes, l'impression en elle meme va commencer. 
 

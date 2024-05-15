@@ -1,4 +1,4 @@
-### Remarques
+# Remarques
 
 À chaque étape, j'ai notifié toute difficulté rencontrée. Voici maintenant les remarques indépendantes des étapes précédentes.
 
