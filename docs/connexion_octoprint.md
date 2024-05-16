@@ -9,7 +9,6 @@ Votre Raspberry Pi éteinte, connectez votre micro processeur à l’imprimante 
 Vous pouvez vous munir d'un écran à brancher via HDMI avec le Pi pour suivre l'application de toutes les configurations faites. Pour une première fois, cela peut prendre un peu de temps mais après ce sera beaucoup plus rapide. Vous savez que l'opération est terminée lorsque vous voyez un prompt qui vous invite à vous connecter.
 
 ## Accès à Octoprint
-![Undervoltage Problem](assets/undervoltage.png)
 Après un démarrage réussi, connectez vous via n'importe quel navigateur mais sur le réseau qui a été configuré avec OctoPi. 
 Pour accéder a l'interface web d'Octoprint, vous pouvez utiliser une de ces 2 URLs:
 

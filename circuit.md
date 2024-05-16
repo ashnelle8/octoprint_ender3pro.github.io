@@ -1,6 +1,6 @@
 # Controle de l'alimentation de l'imprimante 3D
 
-Pour améliorer le contrôle de l'alimentation de l'imprimante 3D, un système a ete mis en place afin de pouvoir aussi alllumer ou eteindre l'imprimante a distance.
+Pour améliorer le contrôle de l'alimentation de l'imprimante 3D, un système a été mis en place afin de pouvoir aussi alllumer ou éteindre l'imprimante à distance.
 
 ###Matériel utilisé
 - **Relais** : Un relais pour contrôler l'alimentation électrique de l'imprimante.

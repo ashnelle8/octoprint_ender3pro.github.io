@@ -27,11 +27,11 @@ Cliquez sur **Plugin Manager** sous OCTOPRINT puis sur **Get more**
 
 ![manager](assets/manager.png)
 
-Entrez **A AJOUTER** au niveau de la barre de recherche puis sur **Install**
+Entrez **Dashboard** au niveau de la barre de recherche puis sur **Install**
 
 ![installation](assets/installation.png)
 
-Suivez ensuite les instructions pour redémarrer Octoprint
+Suivez ensuite les instructions pour redémarrer Octoprint.
 
 ## Parametrage du plugin
 

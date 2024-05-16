@@ -15,5 +15,5 @@ Obico est une application offrant un accès complet aux fonctionnalités d'Octop
 ![Imager](assets/obico_notif.png)
 
 **NB:**
-Lorsque la webcam n'est pas encore installee et configuree, Obico envoie des alertes comme celles ci: **Webcam streaming not working in OctoPrint** qui sera affichee dans un cadran rouge en haut a droite sur la page de Octoprint. Vous pouvez egalement recevoir cette alerte directement sur votre appareil via Obico.
+Lorsque la webcam n'est pas encore installée et configurée, Obico envoie des alertes comme celles ci: **Webcam streaming not working in OctoPrint** qui sera affichée dans un cadran rouge en haut à droite sur la page de Octoprint. Vous pouvez également recevoir cette alerte directement sur votre appareil via Obico.
 
